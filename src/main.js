@@ -5,9 +5,7 @@ import App from './App'
 import router from './router'
 
 
-// 引入element-ui
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+
 
 //引入公共样式
 import './assets/css/reset.less'
@@ -19,7 +17,11 @@ import store from './store/index'
 // 引入api
 import api from '@/api/api.js'
 
-Vue.use(ElementUI)
+import './utils/rem'
+
+import Vant from 'vant';
+import 'vant/lib/index.css';
+Vue.use(Vant)
 
 Vue.config.productionTip = false
 Vue.prototype.$api = api

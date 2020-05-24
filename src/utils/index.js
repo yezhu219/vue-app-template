@@ -32,3 +32,39 @@ export const getParamString = (param) => {
   }
   return "";
 }
+
+export const getRandomArr = (arr,number) => {
+  {
+    var temp = [];    //temp存放生成的随机数组
+    // var count = arr.length;
+    for (let i = 0; i < number; i++) {
+      var num = Math.floor(Math.random() * arr.length); //生成随机数num
+      temp.push(arr[num]);    //获取arr[num]并放入temp
+      arr.splice(num, 1);
+    }
+    return temp;
+  }
+}
+
+export const getDevice = () => {
+  let u = navigator.userAgent,
+    app = navigator.appVersion;
+  let isAndroid = u.indexOf("Android") > -1 || u.indexOf("Linux") > -1;
+  let isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+  let isIphoneX = /iPhoneX/.test(u);
+  let isWeixin = u.toLowerCase().indexOf('micromessenger') != -1;
+  if (isAndroid) {
+    return "android";
+  } else if (isIphoneX) {
+    return "iPhoneX";
+  } else if (isiOS) {
+    if (screen.height == 812) {
+      return "iPhoneX";
+    } else {
+      return "ios";
+    }
+  } else {
+    return "web";
+  }
+};
+

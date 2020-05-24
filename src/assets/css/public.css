@@ -1,0 +1,209 @@
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: inline-block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+/*文字居中*/
+.text-c {
+  text-align: center;
+}
+.text-l {
+  text-align: left;
+}
+.text-r {
+  text-align: right;
+}
+.va-m {
+  vertical-align: middle;
+}
+/*字号设置*/
+.fz32 {
+  font-size: 32px;
+}
+.fz30 {
+  font-size: 30px;
+}
+.fz28 {
+  font-size: 28px;
+}
+.fz24 {
+  font-size: 24px;
+}
+.fz22 {
+  font-size: 20px;
+}
+.fz20 {
+  font-size: 20px;
+}
+.fz18 {
+  font-size: 18px;
+}
+.fz16 {
+  font-size: 16px;
+}
+.fz14 {
+  font-size: 14px;
+}
+.fz12 {
+  font-size: 12px;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-400 {
+  font-weight: 400;
+}
+/* 行高*/
+.lh-1 {
+  line-height: 1.2;
+}
+.lh-2 {
+  line-height: 1.5;
+}
+.lh-40 {
+  line-height: 40px;
+}
+/*超出省略*/
+.text-ell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*背景色*/
+.bg-f {
+  background-color: #fff;
+}
+.bg-c {
+  background-color: #ccc;
+}
+.bg-de {
+  background-color: #dedede;
+}
+.bg-fc {
+  background-color: #fcfcfc;
+}
+.bg-f4 {
+  background-color: #f4f4f4;
+}
+.bg-f6 {
+  background-color: #f6f6f6;
+}
+/*颜色*/
+.c-fff {
+  color: #fff;
+}
+.c-333 {
+  color: #333;
+}
+.c-666 {
+  color: #666;
+}
+.c-999 {
+  color: #999;
+}
+/*间距*/
+.ml-20 {
+  margin-left: 20px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.pdl-20 {
+  padding-left: 20px;
+}
+.pd-10 {
+  padding: 10px;
+}
+.pd-20 {
+  padding: 20px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+/*定位*/
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+/*盒子阴影*/
+.box-s1 {
+  box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.box-s2 {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+/*边框*/
+.line-b {
+  border-bottom: 1px solid #dedede;
+}
+/*鼠标小手*/
+.cp {
+  cursor: pointer;
+}
+/*盒子居中*/
+.mg-a {
+  margin: 0 auto;
+}
+.ps-c {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ps-c {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.df-cc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.df {
+  display: flex;
+}
+.df-ac {
+  display: flex;
+  align-items: center;
+}
+.fsb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-w {
+  flex-wrap: wrap;
+}
